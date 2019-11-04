@@ -1,0 +1,45 @@
+.pager {
+  text-align: center;
+  margin-top: $spacing--lg;
+  
+  &__link {
+    position: relative;
+    display: inline-block;
+    @include font-size($font-size--sm);
+    font-weight: $font-weight--bold;
+    text-align: center;
+    user-select: none;
+    border: 0.4em solid transparent;
+    margin: 0 0.4em;
+
+    &.active {
+      color: $color-primary;
+      [data-theme="dark"] & {
+        color: $color-white;
+      }
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $color-primary;
+      height: 0.12em;
+      width: 100%;
+      transition: 200ms transform;
+      transform-origin: 100%;
+      transform: scaleX(0);
+    }
+
+    &:hover,
+    &.active {
+      &:after {
+        transform-origin: 0%;
+        transform: scaleX(1);
+      }
+    }
+  }
+}

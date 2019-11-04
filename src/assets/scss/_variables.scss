@@ -1,0 +1,125 @@
+/*
+Colors
+*/
+
+$color-primary: #e51273;
+
+$color-black: #141414;
+$color-black--lighter: #232323;
+$color-black--darker: #060606;
+$color-grey: #e6e8ed;
+$color-grey--lighter: #edf0f4;
+$color-grey--darker: #dee0e5;
+$color-white: #fff;
+
+$color-body: $color-black--lighter;
+$background-body: $color-white;
+$color-body--dark: $color-grey;
+$background-body--dark: $color-black--darker;
+
+/*
+Font Family
+*/
+
+$font-family--heading: Montserrat, Arial, sans-serif;
+$font-family--body: Muli, Arial, sans-serif;
+$font-family--serif: Georgia, Times, serif;
+$font-family--mono: Consolas, "Lucida Console", Monaco, monospace;
+
+/*
+Breakpoints
+*/
+
+$breakpoint--phone: 480px;
+$breakpoint--tablet: 768px;
+$breakpoint--desktop: 1248px;
+
+/*
+Heading Font size
+*/
+
+$font-size--h0: (
+    base: 5.1957rem,
+    $breakpoint--tablet: 7.255rem,
+);
+
+$font-size--h1: (
+    base: 3.6491rem,
+    $breakpoint--tablet: 5.1957rem,
+);
+
+$font-size--h2: (
+    base: 2.8833rem,
+    $breakpoint--tablet: 3.6491rem,
+);
+
+$font-size--h3: (
+    base: 2.2781rem,
+    $breakpoint--tablet: 2.8833rem,
+);
+
+$font-size--h4: (
+    base: 2.025rem,
+    $breakpoint--tablet: 2.2781rem,
+);
+
+$font-size--h5: (
+    base: 1.8rem,
+    $breakpoint--tablet: 2.025rem,
+);
+
+$font-size--h6: (
+    base: 1.6rem,
+    $breakpoint--tablet: 1.8rem,
+);
+
+/*
+P Font size
+*/
+
+$font-size--lg: (
+    base: 1.8rem,
+    $breakpoint--tablet: 2.025rem,
+);
+
+$font-size: (
+    base: 1.6rem,
+    $breakpoint--tablet: 1.8rem,
+);
+
+$font-size--sm: (
+    base: 1.422rem,
+    $breakpoint--tablet: 1.6rem,
+);
+
+/*
+Line Height
+*/
+
+$line-height--sm: 1.3;
+$line-height: 1.5;
+
+/*
+Font Weight
+*/
+
+$font-weight--normal: 400;
+$font-weight--bold: 700;
+
+
+/*
+Spacing
+*/
+
+$spacing--sm: 1.5em;
+$spacing: 2em;
+$spacing--md: 2.5em;
+$spacing--lg: 3em;
+
+/*
+Container
+*/
+
+$container-gutter: $spacing--sm;
+$container-width: 815px;
+$container-width--lg: 1040px;

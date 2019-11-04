@@ -1,0 +1,108 @@
+.post__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.post {
+    margin-bottom: $spacing--lg;
+    padding-bottom: $spacing--lg;
+    border-bottom: 1px solid $color-grey--lighter;
+    [data-theme="dark"] & {
+        border-color: $color-black;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+
+    &__title {
+        &>a {
+            transition: 200ms color;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &__meta {
+        padding: 0;
+        margin: 0;
+        > li {
+            display: inline-block;
+            @include font-size($font-size--sm);
+            margin-right: 0.6em;
+            
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+    /*
+    &__date {
+    }
+    */
+    
+    &__category {
+        padding: 0.3em 0.6em;
+        border-radius: 2px;
+        color: darken($color-primary, 4%);
+        background: rgba($color-primary, 0.08);
+        font-weight: $font-weight--bold;
+        transition: 200ms background-color;
+        &:hover {
+            background-color: rgba($color-primary, 0.12);
+        }
+        [data-theme="dark"] & {
+            color: $color-white;
+            background-color: $color-primary;
+            &:hover {
+                background-color: rgba($color-primary, 0.8);
+            }
+        }
+    }
+    
+    &__tags {
+        margin-top: $spacing--lg;
+          
+        .tags__label {
+            @include font-size($font-size--sm);
+            font-weight: $font-weight--bold;
+            color: $color-black;
+            text-transform: uppercase;
+            margin-right: 0.8em;
+            [data-theme="dark"] & {
+                color: $color-grey;
+            }
+        }
+    
+        .tags__item {
+            display: inline-block;
+            margin-right: 0.3em;
+            margin-bottom: 0.3em;
+            padding: 0.3em 0.6em;
+            border-radius: 2px;
+            @include font-size($font-size--sm);
+            font-weight: $font-weight--normal;
+            text-decoration: none;
+            background-color: $color-grey--lighter;
+            transition: 200ms color, 200ms background-color;
+            &:hover {
+                background-color: $color-grey;
+            }
+            [data-theme="dark"] & {
+                background-color: $color-black;
+                &:hover {
+                    background-color: $color-black--lighter;
+                }
+            }
+        }
+    }
+}
+
+/*
+.layout__post {
+}
+*/

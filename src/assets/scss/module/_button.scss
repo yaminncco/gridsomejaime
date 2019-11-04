@@ -1,0 +1,27 @@
+.button {
+    cursor: pointer;
+    display: inline-block;
+    height: 44px;
+    width: auto;
+    @include font-size($font-size);
+    font-weight: $font-weight--bold;
+    text-decoration: none;
+    padding: 0 2.4em;
+    border: none;
+    border-radius: 2px;
+    transition: 200ms background-color;
+    & {
+        color: $color-white;
+        background-color: $color-black;
+        &:hover {
+            background-color: lighten($color-black, 4%);
+        }
+    }
+    &--primary {
+        color: $color-white;
+        background-color: $color-primary;
+        &:hover {
+            background-color: darken($color-primary, 4%);
+        }
+    }
+}

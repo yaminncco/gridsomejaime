@@ -1,0 +1,36 @@
+.input {
+    width: 100%;
+    min-height: 44px;
+    color: $color-black;
+    border: none;
+    background-color: $color-grey--lighter;
+    @include font-size($font-size);
+    font-weight: $font-weight--normal;
+    border-radius: 2px;
+    padding: 0.3em 0.8em;
+    transition: 200ms background-color;
+    &:focus {
+        background-color: $color-grey;
+    }
+    [data-theme="dark"] & {
+        color: $color-grey--lighter;
+        background-color: $color-black;
+        border-color: $color-black;
+        &:focus {
+            background-color: $color-black--lighter;
+        }
+    }
+}
+
+textarea.input {
+    padding: 0.8em;
+}
+
+.input-label {
+    color: $color-black;
+    @include font-size($font-size);
+    font-weight: $font-weight--bold;
+    [data-theme="dark"] & {
+        color: $color-grey--lighter;
+    }
+}

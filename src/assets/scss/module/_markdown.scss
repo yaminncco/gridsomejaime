@@ -1,0 +1,70 @@
+.markdown {
+  p,
+  ul,
+  ol,
+  pre,
+  blockquote {
+    margin: 3.2rem 0;
+  }
+
+  &>:first-child {
+    margin-top: 0px;
+  }
+  &>:last-child {
+    margin-bottom: 0px;
+  }
+
+  p {
+    a {
+      color: $color-primary;
+      font-weight: $font-weight--bold;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 10.2rem 0 3.2rem;
+  }
+
+  blockquote {
+    &>:first-child {
+      margin-top: 0px;
+    }
+    &>:last-child {
+      margin-bottom: 0px;
+    }
+  }
+
+  ul {
+    list-style-type: disc;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+
+  img {
+    display: block;
+    position: relative;
+    width: $container-width--lg;
+    padding: 0 $container-gutter;
+    margin: auto;
+    transform: translateX(-50%);
+    left: 50%; 
+  }
+
+  @media only screen and (max-width: $container-width--lg) {
+    img {
+      width: 100%;
+      padding: 0;
+      left: inherit;
+      transform: inherit;
+    }
+  }
+}

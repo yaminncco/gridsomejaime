@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-family--body;
+    @include font-size($font-size);
+    line-height: $line-height;
+    font-weight: $font-weight--normal;
+    color: $color-body;
+    background-color: $background-body;
+    &[data-theme="dark"] {
+        color: $color-body--dark;
+        background-color: $background-body--dark;
+    }
+}
+
+.h0,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family--heading;
+    color: $color-black;
+    font-weight: $font-weight--bold;
+    line-height: $line-height--sm;
+    [data-theme="dark"] & {
+        color: $color-grey--lighter;
+    }
+}
+
+.h0 {
+    @include font-size($font-size--h0);
+}
+
+h1 {
+    @include font-size($font-size--h1);
+}
+
+h2 {
+    @include font-size($font-size--h2);
+}
+
+h3 {
+    @include font-size($font-size--h3);
+}
+
+h4 {
+    @include font-size($font-size--h4);
+}
+
+h5 {
+    @include font-size($font-size--h5);
+}
+
+h6 {
+    @include font-size($font-size--h6);
+}
+
+
+p {
+    margin-top: 3.2rem;
+    margin-bottom: 0px;
+}
+
+a {
+    color: $color-black;
+    text-decoration: none;
+    [data-theme="dark"] & {
+        color: $color-grey--lighter;
+    }
+}
+.a {
+    color: $color-primary;
+    font-weight: $font-weight--bold;
+    [data-theme="dark"] & {
+        color: $color-primary;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+b,
+strong {
+    font-weight: $font-weight--bold;
+}
+
+small {
+    font-size: 80%;
+}
+
+blockquote {
+    font-family: $font-family--serif;
+    @include font-size($font-size--lg);
+    font-style: italic;
+    color: $color-black;
+    padding: 0.6em 1.2em;
+    border-left: 4px solid $color-grey;
+    line-height: $line-height;
+    [data-theme="dark"] & {
+        color: $color-grey--lighter;
+        border-color: $color-black;
+    }
+}
+
+hr {
+    width: 100%;
+    color: $color-grey;  
+    border-top: none;
+    [data-theme="dark"] & {
+        color: $color-black;
+    }
+}
+
+button,
+input,
+textarea {
+    font-family: $font-family--body;
+}
+
+code {
+    @include font-size($font-size--sm);
+    font-weight: $font-weight--normal;
+    font-family: $font-family--mono;
+    color: $color-black;
+    background-color: $color-grey;
+    [data-theme="dark"] & {
+        color: $color-grey--lighter;
+        background-color: $color-black;
+    }
+}
+
+pre code {
+    display: block;
+    overflow-x: auto;
+    padding: 1.2em;
+}
+
+:not(pre)>code {
+    padding: 0.2em 0.3em;
+    color: darken($color-primary, 4%);
+    background: rgba($color-primary, 0.08);
+    [data-theme="dark"] & {
+        color: #fff;
+        background: $color-primary;
+    }
+}

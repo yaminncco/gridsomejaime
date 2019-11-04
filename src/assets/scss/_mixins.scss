@@ -1,0 +1,11 @@
+@mixin font-size($font-size) {
+    @each $bp, $size in $font-size {
+        @if $bp == base {
+            font-size: $size;
+        } @else {
+            @media screen and (min-width: $bp){
+                font-size: $size;
+            }
+        }
+    }
+}
