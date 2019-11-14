@@ -55,7 +55,8 @@
         &:hover {
             background-color: rgba($color-primary, 0.12);
         }
-        [data-theme="dark"] & {
+        [data-theme="dark"] &,
+        .main__header--hascover & {
             color: $color-white;
             background-color: $color-primary;
             &:hover {

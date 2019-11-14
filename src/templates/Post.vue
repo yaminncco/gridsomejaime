@@ -1,5 +1,5 @@
 <template>
-	<Layout class="layout__post">
+	<Layout class="layout__post" :coverImage="$page.post.cover_image">
     <template #header>
       <ul class="post__meta">
         <li v-if="$page.post.category"><g-link class="post__category" :to="$page.post.category.path" tag="a">{{$page.post.category.title}}</g-link></li>
@@ -26,6 +26,7 @@ query Post ($path: String!) {
     excerpt
     content
     date (format: "MMMM D, YYYY")
+    cover_image (width: 1920, height: 720, quality: 90)
     tags {
       id
       path

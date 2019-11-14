@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <the-header :breakpoint="768"/>
-    <the-main>
+    <the-main :coverImage="coverImage">
       <template #header>
         <slot name="header"/>
       </template>
@@ -21,6 +21,12 @@ export default {
     TheHeader,
     TheMain,
     TheFooter
+  },
+  props: {
+    coverImage: {
+      type: Object,
+      default: null
+    }
   }
 }
 </script>
