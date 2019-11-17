@@ -195,6 +195,7 @@ export default {
         height: 3px;
         border-radius: 2px;
         background-color: $color-black;
+        transition: 200ms all;
         [data-theme="dark"] & {
           background-color: $color-grey;
         }
