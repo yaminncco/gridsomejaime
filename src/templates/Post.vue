@@ -1,5 +1,6 @@
 <template>
 	<Layout class="layout__post" :coverImage="$page.post.cover_image">
+    <ReadProgress/>
     <template #header>
       <ul class="post__meta">
         <li v-if="$page.post.category"><g-link class="post__category" :to="$page.post.category.path" tag="a">{{$page.post.category.title}}</g-link></li>
@@ -42,7 +43,12 @@ query Post ($path: String!) {
 </page-query>
 
 <script>
+import ReadProgress from '~/components/ReadProgress.vue'
+
 export default {
+  components: {
+    ReadProgress
+  },
   metaInfo() {
     return {
       title: this.$page.post.title
