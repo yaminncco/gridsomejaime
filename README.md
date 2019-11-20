@@ -2,6 +2,10 @@
 
 A simple Blog theme for Gridsome
 
+## Demo
+
+https://gridsomejaime.netlify.com
+
 ## Install
 
 ### 1. Install Gridsome CLI tool if you don't have
