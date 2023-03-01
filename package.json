@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@gridsome/source-filesystem": "^0.6.2",
-    "@gridsome/transformer-remark": "^0.3.4",
+    "@gridsome/transformer-remark": "^0.6.4",
     "gridsome": "^0.7.19"
   },
   "devDependencies": {
